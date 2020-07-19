@@ -1,0 +1,10 @@
+- name: setup server
+  hosts: all
+  become: true
+
+  roles:
+   - setup-os
+   - nginx-php-fpm
+   - laravel
+   - uwsgi-django
+   - react
